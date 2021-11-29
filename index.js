@@ -1,5 +1,18 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  function reverse(word) {
+    // 'abc' => 'cba'
+    // const wordArray = word.split("");
+    // const reversedWordArray = wordArray.reverse();
+    // const reversedWord = reversedWordArray.join("");
+    // return reversedWord;
+    return word.split("").reverse().join("");
+  }
+  
+  function isPalindrome(word) {
+    const reversedWord = reverse(word);
+  
+    return word === reversedWord;
+  }
 }
 
 /* 
